@@ -11,10 +11,23 @@ const connectWallet = () => {
 
   return(
     <div>
-      <button onClick={connectToMetamask}>Connect Wallet</button>
-      <p>address = {address}</p>
+      <button onClick={connectToMetamask} variant="text" style={styles.getStarted}>Connect Wallet</button>
+      <p style={styles.textstyle}>address = {address}</p>
     </div>
   )
+}
+
+const styles = {
+  getStarted: {
+    backgroundColor: '#EF2F88',
+    color: '#FFFFFF',
+    p: ['0 16px'],
+    minHeight: 45,
+    ml: [6]
+  },
+  textstyle: {
+    color: '#EF2F88'
+  }
 }
 
 export default connectWallet
