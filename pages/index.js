@@ -1,33 +1,32 @@
+import Head from 'next/head'
+import Image from 'next/image'
 import {useEffect, useState } from 'react'
-const connectWallet = () => {
-  const [address, setAddress] = useState([])
-  function connectToMetamask() {
+
+export default function ConnectWallet() {
+
+  const [address, setAddress] = useState([]);
+
+  const connectToMetamask = async () => {
     window.ethereum ?
       ethereum.request({ method: "eth_requestAccounts" }).then((accounts) => {
         setAddress(accounts[0])
       }).catch((err) => console.log(err))
       : console.log("Please install MetaMask")
-  }
+    }
 
-  return(
-    <div>
-      <button onClick={connectToMetamask} variant="text" style={styles.getStarted}>Connect Wallet</button>
-      <p style={styles.textstyle}>address = {address}</p>
-    </div>
+  return (
+    <>
+      <Head>
+        <title>TFTPDF Démo | Dashboard</title>
+        <meta name="description" content="Bienvenue sur le dashboard" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div>
+        <button onClick={connectToMetamask} variant="text">Connect Wallet</button>
+        <p>address = {address}</p>
+      </div>
+    </>
   )
-}
 
-const styles = {
-  getStarted: {
-    backgroundColor: '#EF2F88',
-    color: '#FFFFFF',
-    p: ['0 16px'],
-    minHeight: 45,
-    ml: [6]
-  },
-  textstyle: {
-    color: '#EF2F88'
-  }
 }
-
-export default connectWallet
