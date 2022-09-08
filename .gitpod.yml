@@ -4,7 +4,7 @@
 
 tasks:
   - init: npm install && npm run build
-    command: npm run start && next build
+    command: npm run start
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
