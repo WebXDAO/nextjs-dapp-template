@@ -1,13 +1,10 @@
 import { useRouter } from 'next/router'
 import Navbar from '../navigation/Navbar'
-import NavbarPro from '../navigation/Navbar'
-
+import Navbar from '../navigation/Navbar'
 import Footer from '../navigation/Footer'
 import Head from 'next/head'
 
 export default function GlobalLayout({ children, session }) {
-  const router = useRouter()
-
   return (
     <>
       <Head>
@@ -20,8 +17,7 @@ export default function GlobalLayout({ children, session }) {
       </Head>
 
       <div className="flex h-screen flex-col">
-        {/* <Navbar></Navbar> */}
-        <NavbarPro></NavbarPro>
+        <Navbar></Navbar>
         <div className="flex flex-1 md:flex-col">
           <main className="flex-1">{children}</main>
         </div>
