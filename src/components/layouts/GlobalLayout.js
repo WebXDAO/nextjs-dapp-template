@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router'
-import Navbar from '../navigation/Navbar'
 import Navbar from '../navigation/Navbar'
 import Footer from '../navigation/Footer'
 import Head from 'next/head'
