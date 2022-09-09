@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-6 border-t border-gray-200 pt-8">
-            <p className="text-sm font-semibold text-slate-700 xl:text-center">
+            <p className="text-sm font-semibold text-slate-700 text-center">
               &copy; {new Date().getFullYear()}. Made with 🍿 by WebXDAO.
             </p>
           </div>
