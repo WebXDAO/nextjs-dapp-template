@@ -53,7 +53,7 @@ const Footer = () => {
                   </a>
                 ))}
                 <div className=" flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-slate-700 hover:text-slate-500">
-                  <a href="https://github.com/WebXDAO/nextjs-dapp-template">Github</a>
+                  <a href="https://github.com/WebXDAO/nextjs-dapp-template">GitHub</a>
                   <div className="h-4 w-px bg-slate-500/20"></div>
                   <a href="https://github.com/WebXDAO/nextjs-dapp-template/commits/main">Changelog</a>
                 </div>
