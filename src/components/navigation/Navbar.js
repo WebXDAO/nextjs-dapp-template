@@ -64,7 +64,7 @@ export default function Navbar() {
                     alt="WebXDAO"
                   />
                   <p className="text-slate-700 text-sm font-semibold">
-                    WebXDAO Community
+                    WebXDAO
                   </p>
                 </div>
               </div>
