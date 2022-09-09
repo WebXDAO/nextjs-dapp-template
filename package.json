@@ -1,5 +1,6 @@
 {
   "name": "nextjs-dapp-template",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,21 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
-    "antd": "^4.18.2",
+    "autoprefixer": "^10.4.1",
+    "@headlessui/react": "^1.7.0",
+    "@heroicons/react": "^1.0.6",
+    "focus-visible": "^5.2.0",
+    "framer-motion": "^6.5.1",
+    "tailwindcss": "^3.1.8",
+    "use-debounce": "^8.0.3",
+    "clsx": "^1.1.1",
+    "react-dom": "17.0.2",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
     "web3": "^1.6.1",
     "web3modal": "^1.9.4"
   },
   "devDependencies": {
-    "@headlessui/react": "^1.4.2",
-    "@heroicons/react": "^1.0.5",
-    "autoprefixer": "^10.4.1",
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.7",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.11"
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.13"
   }
 }
