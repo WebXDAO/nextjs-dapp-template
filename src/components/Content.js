@@ -3,7 +3,7 @@ export default function Content() {
     <div className="h-full bg-white">
       <div className="mx-auto max-w-6xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="text-center">
-          <h1 className="bg-gradient-to-r from-purple-900 to-pink-700 bg-clip-text text-8xl font-extrabold text-transparent">
+          <h1 className="bg-gradient-to-r from-purple-900 to-pink-700 bg-clip-text  text-6xl sm:text-8xl  font-extrabold text-transparent">
             Dapp Hackathon Next.js Starter
           </h1>
           <p className="mt-4 font-semibold text-slate-700">
