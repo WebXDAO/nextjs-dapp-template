@@ -6,7 +6,7 @@ export default function GlobalLayout({ children, session }) {
   return (
     <>
       <Head>
-        <title>Nextjs-Dapp-Template | Web3Community</title>
+        <title>Nextjs-Dapp-Template | WebXDAO</title>
         <meta
           name="description"
           content="Nextjs Dapp Hackaton Starter | WebXDAO"
